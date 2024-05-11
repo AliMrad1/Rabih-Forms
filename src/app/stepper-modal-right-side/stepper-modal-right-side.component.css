@@ -1,0 +1,62 @@
+.btn-active{
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  font-size: 10px;
+  text-align: center;
+  color: #00915A;
+  border: 2px solid #00915A;
+}
+
+.btn-inactive{
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  font-size: 10px;
+  text-align: center;
+  color: #DCDEE0;
+  border: 2px solid #DCDEE0;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMargin {
+  margin-left: 4%;
+}
+
+.ulCustom{
+  margin-left: 5%;
+  position: relative;
+  column-gap: 1%;
+}
+
+.liCustom {
+  margin-left: 9%;
+
+}
+
+.liCustom1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left:14.5%;
+  z-index: 1;
+}
+
+.stepperComponentDisplay{
+  margin-top: 15%;
+}
+.subLabel {
+  margin-top: 1%;
+  position: absolute; 
+  top: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #858D94;
+}

@@ -1,0 +1,27 @@
+.buttons {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 2%;
+}
+
+.cancelButton{
+    background-color: transparent;
+    border: 1px solid #00915A;
+    color: #00915A;
+    border-radius: 4px;
+    padding: 1% 1% 1% 1%;
+    width: 15%;
+}
+
+.nextButton{
+    background-color: #00915A;
+    border: 1px solid #00915A;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 1% 1% 1% 1%;
+    opacity: 0.35;
+    width: 15%;
+
+}

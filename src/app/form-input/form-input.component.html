@@ -1,0 +1,4 @@
+<div class="d-flex flex-column" [style.width.%]="width">
+    <label class="label">{{label}} <span class="optionalNote">  *</span></label>
+    <input [type]="type" (change)="onInputChangeEmit()"/>
+</div>

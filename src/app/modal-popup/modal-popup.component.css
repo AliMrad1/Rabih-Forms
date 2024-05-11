@@ -1,0 +1,16 @@
+.modal-left-side-bg {
+    background-color: #E8F4EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-right-side-bg{
+    padding: 2% 2% 2% 2%;
+
+}
+
+.custome-height{
+    height: max-content;
+}
+
