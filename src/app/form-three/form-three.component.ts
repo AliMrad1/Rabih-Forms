@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-form-three',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./form-three.component.css']
 })
 export class FormThreeComponent {
-
+  @Input() left_Button = "PREVIOUS";
+  @Input() right_Button = "NEXT";
 }

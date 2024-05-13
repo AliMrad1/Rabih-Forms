@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-form-four',
@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class FormFourComponent {
 
+  @Input() left_Button = "CANCEL";
+  @Input() right_Button = "NEXT";
 }

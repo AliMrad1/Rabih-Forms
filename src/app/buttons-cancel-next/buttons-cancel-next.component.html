@@ -1,5 +1,12 @@
 <div class="buttons">
 
-    <button class="cancelButton">CANCEL</button>
-    <button class="nextButton">NEXT</button>
+    <button class="cancelButton" 
+        [attr.data-bs-dismiss]="left_Button == 'CANCEL' ? 'modal' : null" 
+        (click)="goBackStep()">
+            {{left_Button}}
+    </button>
+
+    <button class="nextButton" (click)="goToNextStep()">
+        {{right_Button}}
+    </button>
 </div>

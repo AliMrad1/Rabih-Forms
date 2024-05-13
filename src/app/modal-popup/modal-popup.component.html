@@ -3,23 +3,21 @@
     Launch demo modal
   </button>
 
-  <div class="modal modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal" [ngClass]="{'fade-in': isModalVisible, 'fade-out': !isModalVisible}" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" [class.modal-fullscreen]="isSmallScreen" >
       <div class="modal-content">
       
         <div class="modal-body m-0 p-0">
 
             <div class="row custome-height">
-                <div class="col-4 modal-left-side-bg">
+                <div class="col-4 modal-left-side-bg" *ngIf="!isSmallScreen">
                     <app-modal-left-side></app-modal-left-side>
                 </div>
-                <div class="col-8 modal-right-side-bg">
+                <div class="modal-right-side-bg" [class.col-8]="!isSmallScreen" [class.col-12]="isSmallScreen">
                     <app-modal-right-side></app-modal-right-side>
                 </div>
             </div>
-
       </div>
+     </div>
     </div>
   </div>
-
-  

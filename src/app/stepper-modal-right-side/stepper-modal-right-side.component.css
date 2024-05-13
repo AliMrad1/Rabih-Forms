@@ -1,21 +1,26 @@
 .btn-active{
   border-radius: 50%;
-  width: 6vh;
-  height: 6vh;
-  font-size: 10px;
+  width: 28px;
+  height: 28px;
   text-align: center;
   color: #00915A;
   border: 2px solid #00915A;
+  gap: 0px;
+  opacity: 0px;
+  background: #FFFFFF;
+
 }
 
 .btn-inactive{
   border-radius: 50%;
-  width: 6vh;
-  height: 6vh;
-  font-size: 10px;
+  width: 28px;
+  height: 28px;
   text-align: center;
-  color: #DCDEE0;
-  border: 2px solid #DCDEE0;
+  color: #B4BABF;
+  background: #FFFFFF;
+  border: 2px solid #B4BABF;
+  opacity: 0px;
+  background: #FFFFFF;
 }
 
 .btn{
@@ -44,7 +49,7 @@
   top: 50%;
   transform: translateY(-50%);
   margin-left:14.5%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .stepperComponentDisplay{
@@ -58,5 +63,19 @@
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
+}
+
+.subLabel-active {
+  color: #00915A;
+}
+
+.subLabel-inactive {
   color: #858D94;
+  ;
+}
+
+.stepperDone {
+  background-color: #00915A;
+  color: #FFFFFF;
+  border: 2px solid #00915A;
 }

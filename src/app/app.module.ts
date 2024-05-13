@@ -22,6 +22,7 @@ import { FormFiveComponent } from './form-five/form-five.component';
 import { FormInputComponent } from './form-input/form-input.component';
 import { ButtonsCancelNextComponent } from './buttons-cancel-next/buttons-cancel-next.component';
 import { NextStepDivFormOneComponent } from './next-step-div-form-one/next-step-div-form-one.component';
+import { FormTitleComponent } from './form-title/form-title.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { NextStepDivFormOneComponent } from './next-step-div-form-one/next-step-
     FormInputComponent,
     ButtonsCancelNextComponent,
     NextStepDivFormOneComponent,
+    FormTitleComponent,
   ],
   imports: [
     BrowserModule,

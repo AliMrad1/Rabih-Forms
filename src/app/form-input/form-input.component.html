@@ -1,4 +1,16 @@
 <div class="d-flex flex-column" [style.width.%]="width">
     <label class="label">{{label}} <span class="optionalNote">  *</span></label>
-    <input [type]="type" (change)="onInputChangeEmit()"/>
+    <div [@pushUpDown] class="input-icon-div">
+        <input [type]="type" [(ngModel)]="selectedUser.FullName" (change)="onInputChangeEmit()" (focus)="showDropdown = true" (blur)="showDropdown = false"/>
+        <img *ngIf="icon != ''" class="input-icon" [src]="icon"/>
+
+        <ng-container *ngIf="showDropdown && icon != ''" >
+            <div class="dropdown-content" [@fadeInOut]>
+                <div *ngFor="let userExist of existingUsers" class="dropdown-item" (click)="selectUser(userExist)">
+                    <img src="./assets/images/person-icon.png"/>
+                    <div class="userInfo">{{userExist.UUI}}, {{userExist.FullName}}</div>
+                </div>
+            </div>
+        </ng-container>
+    </div>
 </div>

@@ -3,20 +3,20 @@
       <div class="col-10 ">
         <app-stepper-modal-right-side [linearModeSelected]="true" #appStepper>
           <cdk-step [label]="'1'"> 
-            <app-form-one></app-form-one>
+            <app-form-one left_Button="CANCEL" right_Button="NEXT"></app-form-one>
           </cdk-step>
           <cdk-step [label]="'2'">
-            step 2
+            <app-form-two left_Button="PREVIOUS" right_Button="NEXT"></app-form-two>
           </cdk-step>
           <cdk-step [label]="'3'">
-            step 3
+            <app-form-three  left_Button="PREVIOUS" right_Button="NEXT"></app-form-three>
           </cdk-step>
           <cdk-step [label]="'4'">
-            step 4
+            <app-form-four  left_Button="PREVIOUS" right_Button="NEXT"></app-form-four>
           </cdk-step>
 
           <cdk-step [label]="'5'">
-            step 5
+            <app-form-five  left_Button="PREVIOUS" right_Button="CREATE USER"></app-form-five>
           </cdk-step>
         </app-stepper-modal-right-side>
       </div>

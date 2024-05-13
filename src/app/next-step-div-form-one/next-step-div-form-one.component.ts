@@ -17,8 +17,6 @@ export class NextStepDivFormOneComponent {
 
     }
  
-    alert(this.isSwitchedToTrue);
-
-}
+  }
 
 }
