@@ -1,0 +1,81 @@
+.btn-active{
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  color: #00915A;
+  border: 2px solid #00915A;
+  gap: 0px;
+  opacity: 0px;
+  background: #FFFFFF;
+
+}
+
+.btn-inactive{
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+  color: #B4BABF;
+  background: #FFFFFF;
+  border: 2px solid #B4BABF;
+  opacity: 0px;
+  background: #FFFFFF;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerMargin {
+  margin-left: 4%;
+}
+
+.ulCustom{
+  margin-left: 5%;
+  position: relative;
+  column-gap: 1%;
+}
+
+.liCustom {
+  margin-left: 9%;
+
+}
+
+.liCustom1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left:14.5%;
+  z-index: 2;
+}
+
+.stepperComponentDisplay{
+  margin-top: 15%;
+}
+.subLabel {
+  margin-top: 1%;
+  position: absolute; 
+  top: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.subLabel-active {
+  color: #00915A;
+}
+
+.subLabel-inactive {
+  color: #858D94;
+  ;
+}
+
+.stepperDone {
+  background-color: #00915A;
+  color: #FFFFFF;
+  border: 2px solid #00915A;
+}

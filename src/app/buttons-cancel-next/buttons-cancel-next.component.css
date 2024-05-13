@@ -1,0 +1,35 @@
+.buttons {
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 2%;
+}
+
+.cancelButton{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    border: 1px solid #00915A;
+    color: #00915A;
+    border-radius: 4px;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    width: max-content;
+}
+
+.nextButton{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #00915A;
+    border: 1px solid #00915A;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 1.5% 1.5% 1.5% 1.5%;
+    width: max-content;
+}
+
+.nextButton-disabled {
+    opacity: 0.35;
+}

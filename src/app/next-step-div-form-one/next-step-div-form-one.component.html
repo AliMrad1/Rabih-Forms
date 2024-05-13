@@ -1,0 +1,21 @@
+<div class="nextStepDiv">
+    <p class="nextStepTitle">For the next steps...</p>
+    <div class="checkBoxCopy">
+        <label class="switch" >
+            <input type="checkbox" (change)="onSwitchClicked($event)">
+            <span class="slider round"></span>
+        </label>
+<!-- 
+        <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+</div> -->
+        
+        <p class="paragraphDesc">
+            I would like to copy the following settings from an existing user to pre-fill the next steps.
+        </p>
+    </div>
+
+    <app-form-input *ngIf="isSwitchedToTrue" style="width: 48.5%;" label="Search a user" type="text" width="48.5" icon="./assets/images/search-icon.png"></app-form-input>
+    
+</div>

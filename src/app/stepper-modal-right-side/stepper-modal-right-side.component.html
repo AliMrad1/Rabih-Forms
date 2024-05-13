@@ -1,0 +1,28 @@
+<div class="container mt-4 containerMargin">
+    <ul  class="nav nav-pills nav-justified ulCustom">
+        <li class="nav-item d-flex justify-content-center liCustom1">
+            <!-- <img src="./assets/images/line.png" /> -->
+        </li>
+        <li class="nav-item liCustom" *ngFor="let step of steps;let i =index">
+            <div class="d-grid">
+                <div class="d-flex align-items-center justify-content-center flex-column">
+                    <div
+                        [class.btn-active]="selectedIndex === i"
+                        [class.btn-inactive]="selectedIndex !== i"
+                        [class.stepperDone]="selectedIndex > i"
+                        class="  btn">
+                     <img *ngIf="selectedIndex === i" src="./assets/images/pin-stepper.png" />
+                     <img *ngIf="selectedIndex > i" src="./assets/images/done-sign.png" />
+                 </div>
+                  <p class="subLabel" [class.subLabel-active]="selectedIndex === i"  [class.subLabel-inactive]="selectedIndex !== i">
+                    {{ stepperSubLabels[i] }}
+                </p>
+                </div>   
+            </div>
+        </li>
+    </ul>
+    
+    <div *ngIf="selected" class="stepperComponentDisplay">
+        <ng-container [ngTemplateOutlet]="selected.content"></ng-container>
+    </div>
+</div>

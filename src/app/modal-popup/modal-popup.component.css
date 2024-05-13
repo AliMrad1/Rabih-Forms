@@ -1,0 +1,43 @@
+.modal-left-side-bg {
+    background-color: #E8F4EF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-right-side-bg{
+    padding: 2% 2% 2% 2%;
+
+}
+
+.custome-height{
+    height: max-content;
+}
+
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity:0;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
